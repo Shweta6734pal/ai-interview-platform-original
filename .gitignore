@@ -50,8 +50,11 @@ pids/
 *.pid.lock
 
 
-.env
 
+# Environment files
+.env
+.env.*
+*.env
 *.zip
 node_modules/
-.env
+
