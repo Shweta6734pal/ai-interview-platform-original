@@ -10,8 +10,8 @@ const connectDB = require("./config/Db");
 
 const app = express();
 
-
-
+// trust Render's proxy so rate limiter sees real client IPs
+app.set("trust proxy", 1);
 
 // connect database
 connectDB();
